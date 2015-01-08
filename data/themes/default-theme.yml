@@ -1,25 +1,25 @@
 font:
   catalog:
+    TakaoMincho:
+      normal: TakaoMincho.ttf
+      bold: TakaoMincho.ttf
+      italic: TakaoMincho.ttf
+      bold_italic: TakaoMincho.ttf
+    TakaoGothic:
+      normal: TakaoGothic.ttf
+      bold: TakaoGothic.ttf
+      italic: TakaoGothic.ttf
+      bold_italic: TakaoGothic.ttf
     NotoSerif:
       normal: notoserif-regular-latin.ttf
       bold: notoserif-bold-latin.ttf
       italic: notoserif-italic-latin.ttf
       bold_italic: notoserif-bolditalic-latin.ttf
-    # NOTE currently, callout numbers don't work with LiberationMono
-    #LiberationMono:
-    #  normal: liberationmono-regular-latin.ttf
-    #  bold: liberationmono-bold-latin.ttf
-    #  italic: liberationmono-italic-latin.ttf
-    #  bold_italic: liberationmono-bolditalic-latin.ttf
     Mplus1mn:
       normal: mplus1mn-regular-ascii-conums.ttf
       bold: mplus1mn-bold-ascii.ttf
       italic: mplus1mn-italic-ascii.ttf
       bold_italic: mplus1mn-bolditalic-ascii.ttf
-    #Mplus1pMultilingual:
-    #  normal: mplus1p-regular-multilingual.ttf
-    #FontAwesome:
-    #  normal: fontawesome-regular.ttf
   # FIXME using fallbacks breaks use of custom font styles (fixed in Prawn 1.2.1!)
   #fallbacks:
   #  - Mplus1pMultilingual
@@ -30,10 +30,10 @@ page:
   layout: portrait
   # multiply inches by 72 to get pt values
   margin: [0.5 * 72, 0.67 * 72, 0.67 * 72, 0.67 * 72]
-  size: Letter
+  size: B5
 base:
   font_color: 333333
-  font_family: NotoSerif
+  font_family: TakaoMincho
   # choose one of these font_size/line_height_length combinations
   #font_size: 14
   #line_height_length: 20
@@ -63,7 +63,7 @@ horizontal_rhythm: $base_line_height_length
 link_font_color: $brand_primary_color
 heading:
   font_color: $base_font_color
-  font_family: $base_font_family
+  font_family: TakaoGothic
   # h1 is used for document title
   font_size_h1: floor($base_font_size * 2.6)
   # h2 is used for chapter title
